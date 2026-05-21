@@ -201,22 +201,34 @@ console.log(LearnerSubmissions[0].learner_id);
 
 let learner1Grade1 = LearnerSubmissions[0].submission.score;
 // console.log(learner1Grade1);
-
 let learner1Grade2 = LearnerSubmissions[1].submission.score;
 // console.log(learner1Grade2);
 
+/* Course ID 3 Not Due
 let learner1Grade3 = LearnerSubmissions[2].submission.score;
-// console.log(learner1Grade3);
-// let firstLearnerGrade1 = parseInt(LearnerSubmissions)
+console.log(learner1Grade3);
+let firstLearnerGrade1 = parseInt(LearnerSubmissions)
+*/
+
+// Leaner 1 Average
+
+const assignment1PossiblePoints = 50
+const assignment2PossiblePoints = 150
+
+let learner1Average = (learner1Grade1 + learner1Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
+console.log(learner1Average);
 
 
 // Leaner 2 Grades
 
 let learner2Grade1 = LearnerSubmissions[3].submission.score;
 // console.log(learner2Grade1);
-
 let learner2Grade2 = LearnerSubmissions[4].submission.score;
 // console.log(learner2Grade2);
+
+let learner2Average = (learner2Grade1 + learner2Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
+console.log(learner2Average);
+
 
 
 function getLearnerData(course, ag, submissions) {
