@@ -232,12 +232,44 @@ let learner2Average = (learner2Grade1 + learner2Grade2) / (assignment1PossiblePo
 console.log(learner2Average);
 
 
+/* Original Function - Backup
+function getLearnerData(course, ag, submissions) {
 
+  // here, we would process this data to achieve the desired result.
+
+  const result = [
+    {
+      id: 125,
+      avg: 0.985, // (47 + 150) / (50 + 150)
+      1: 0.94, // 47 / 50
+      2: 1.0 // 150 / 150
+    },
+    {
+      id: 132,
+      avg: 0.82, // (39 + 125) / (50 + 150)
+      1: 0.78, // 39 / 50
+      2: 0.833 // late: (140 - 15) / 150
+    }
+
+  ];
+
+  return result;
+}
+*/
 
 
 function getLearnerData(course, ag, submissions) {
 
   // here, we would process this data to achieve the desired result.
+    try {
+        if (course.id !== ag.course_id) {
+
+            throw new Error("This assignment does not belong to the course");
+
+        }
+    } catch (error) {
+        console.log(error)
+    }
 
   const result = [
     {
