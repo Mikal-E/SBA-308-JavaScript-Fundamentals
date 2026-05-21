@@ -277,7 +277,7 @@ function getLearnerData(course, ag, submissions) {
   ];
 
 // For Loop To Iterate Through Assignment Dates
-  
+
   for (let i = 0; i < ag.assignments.length; i++) {
 
     const dueDate = new Date(ag.assignments[i].due_at);
@@ -289,9 +289,15 @@ function getLearnerData(course, ag, submissions) {
 
     }
     
+    // For Loop For Submissions
+    for (let a = 0; a < submissions.length; a++) {
+    const currentSubmission = submissions[a];
+    
+    }
+
   }
 
-  return result;
+    return result;
 }
 
 const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
