@@ -33,6 +33,6 @@
 * Use functions to handle repeated tasks.
 * Program outputs processed data as described above. Partial credit will be earned depending on the level of adherence to the described behavior.
 * Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit).
-* Commit frequently to the git repository.
+* ~~Commit frequently to the git repository.~~
 * ~~Include a README file that contains a description of your application.~~
 

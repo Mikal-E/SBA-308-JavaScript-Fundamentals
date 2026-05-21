@@ -188,16 +188,21 @@ const LearnerSubmissions = [
 
 // My Program Begins Here
 
-let learner1 = LearnerSubmissions[0]
+// Assignment Possible Points
+
+const assignment1PossiblePoints = 50;
+const assignment2PossiblePoints = 150;
+const passingGrade = .70;
+
+// Leaner 1 Grades
+
+// let learner1 = LearnerSubmissions[0]
 /* Note To Self - both grade logs work & all log formats at this comment
 console.log(learner1.submission.score)
 console.log(learner1Grade1);
 
 console.log(LearnerSubmissions[0].learner_id);
 */
-
-
-// Leaner 1 Grades
 
 let learner1Grade1 = LearnerSubmissions[0].submission.score;
 // console.log(learner1Grade1);
@@ -212,9 +217,6 @@ let firstLearnerGrade1 = parseInt(LearnerSubmissions)
 
 // Leaner 1 Average
 
-const assignment1PossiblePoints = 50
-const assignment2PossiblePoints = 150
-
 let learner1Average = (learner1Grade1 + learner1Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
 console.log(learner1Average);
 
@@ -228,6 +230,8 @@ let learner2Grade2 = LearnerSubmissions[4].submission.score;
 
 let learner2Average = (learner2Grade1 + learner2Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
 console.log(learner2Average);
+
+
 
 
 
