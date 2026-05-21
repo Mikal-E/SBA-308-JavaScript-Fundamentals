@@ -188,11 +188,11 @@ const LearnerSubmissions = [
 
 // My Program Begins Here
 
-// Assignment Possible Points
+// Assignment Possible Points - Testing Options & Learning How To Navigate Data
 
-const assignment1PossiblePoints = 50;
-const assignment2PossiblePoints = 150;
-const passingGrade = .70;
+// const assignment1PossiblePoints = 50;
+// const assignment2PossiblePoints = 150;
+// const passingGrade = .70;
 
 // Leaner 1 Grades
 
@@ -204,9 +204,9 @@ console.log(learner1Grade1);
 console.log(LearnerSubmissions[0].learner_id);
 */
 
-let learner1Grade1 = LearnerSubmissions[0].submission.score;
-// console.log(learner1Grade1);
-let learner1Grade2 = LearnerSubmissions[1].submission.score;
+// let learner1Grade1 = LearnerSubmissions[0].submission.score;
+// // console.log(learner1Grade1);
+// let learner1Grade2 = LearnerSubmissions[1].submission.score;
 // console.log(learner1Grade2);
 
 /* Course ID 3 Not Due
@@ -215,21 +215,22 @@ console.log(learner1Grade3);
 let firstLearnerGrade1 = parseInt(LearnerSubmissions)
 */
 
-// Leaner 1 Average
+// Leaner 1 Average - Testing Options & Learning How To Navigate Data
 
-let learner1Average = (learner1Grade1 + learner1Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
-console.log(learner1Average);
+// let learner1Average = (learner1Grade1 + learner1Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
+// console.log(learner1Average);
 
 
-// Leaner 2 Grades
+// Leaner 2 Grades - Testing Options & Learning How To Navigate Data
 
-let learner2Grade1 = LearnerSubmissions[3].submission.score;
-// console.log(learner2Grade1);
-let learner2Grade2 = LearnerSubmissions[4].submission.score;
-// console.log(learner2Grade2);
+// let learner2Grade1 = LearnerSubmissions[3].submission.score;
+// // console.log(learner2Grade1);
+// let learner2Grade2 = LearnerSubmissions[4].submission.score;
+// // console.log(learner2Grade2);
 
-let learner2Average = (learner2Grade1 + learner2Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
-console.log(learner2Average);
+// let learner2Average = (learner2Grade1 + learner2Grade2) / (assignment1PossiblePoints + assignment2PossiblePoints);
+// console.log(learner2Average);
+
 
 
 /* Original Function - Backup
@@ -278,7 +279,7 @@ function getLearnerData(course, ag, submissions) {
 
 // For Loop To Iterate Through Assignment Dates
 
-  for (let i = 0; i < ag.assignments.length; i++) {
+    for (let i = 0; i < ag.assignments.length; i++) {
 
     const dueDate = new Date(ag.assignments[i].due_at);
     const today = new Date();
@@ -289,10 +290,19 @@ function getLearnerData(course, ag, submissions) {
 
     }
     
-    // For Loop For Submissions
+// For Loop For Submissions
     for (let a = 0; a < submissions.length; a++) {
     const currentSubmission = submissions[a];
     
+    if (currentSubmission.assignment_id !== ag.assignments[i].id) {
+        
+        continue;
+
+    }
+
+    let score = currentSubmission.submission.score
+    const due
+
     }
 
   }
